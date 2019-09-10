@@ -58,8 +58,8 @@ app.get('/signup', (req, res) => {
     res.render('signup')
 })
 
-app.get('/latestfaq', (req, res) => {
-    res.render('faq')
+app.get('/faq', (req, res) => {
+    res.render('FAQ')
 })
 
 app.get('/questionnaire-home', (req, res) => {
