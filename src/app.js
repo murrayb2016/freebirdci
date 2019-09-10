@@ -58,7 +58,7 @@ app.get('/signup', (req, res) => {
     res.render('signup')
 })
 
-app.get('/faq', (req, res) => {
+app.get('/latestfaq', (req, res) => {
     res.render('faq')
 })
 
