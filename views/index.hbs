@@ -31,6 +31,32 @@
 
   {{>header}}
 
+
+<p>
+  To access your dashboard,
+  {{#if user}}
+  <a href="/profile">
+          Signed in as {{user.profile.firstName}} {{user.profile.lastName}}
+        </a>
+    <a href="/dashboard">click here</a>.
+
+    <a href="/logout">Sign out</a>
+  {{else}}
+    <a href="/login">Sign in</a>
+    <a href="/dashboard">sign in dashboard</a>.
+  </p>
+  <p>
+    If you don't have an account, you can
+    <a href="/register">register for free</a>.
+  </p>
+  <p>
+    If you have an account, but forgot your password,
+    <a href="/reset-password">click here</a> to
+    send a recovery link to your email address.
+  {{/if}}
+</p>
+
+
   <!--Header Carousel-->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
